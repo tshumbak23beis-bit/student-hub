@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  /* 🌈 Aesthetic MediumSlateBlue gradient */
+  background: linear-gradient(
+    135deg,
+    #7b68ee,
+    #9370db,
+    #b19cd9,
+    #87cefa
+  );
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+/* APP WRAPPER */
+.app-container {
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+
+  padding: 15px 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  color: #5a4fcf;
+  margin: 0;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* ✨ ICON + TEXT STYLE */
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+
+  padding: 8px 12px;
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+
+/* ICON SIZE */
+.nav-links a svg {
+  font-size: 16px;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+  background: #7b68ee;
   color: white;
+  transform: scale(1.05);
 }
 
-.App-link {
-  color: #61dafb;
+/* PAGE AREA */
+.page-container {
+  padding: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 🌸 OPTIONAL CARD STYLE (use in all pages later) */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  backdrop-filter: blur(8px);
 }

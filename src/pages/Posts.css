@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.posts-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.posts-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.posts-card h1 {
+  color: #2575fc;
+}
+
+.posts-card p {
+  color: #555;
+}
